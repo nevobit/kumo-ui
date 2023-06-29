@@ -1,4 +1,4 @@
-# Tailwind CSS Community Guidelines
+# Kumo UI Community Guidelines
 
 The following community guidelines are based on [The Ruby Community Conduct Guidelines](https://www.ruby-lang.org/en/conduct/).
 

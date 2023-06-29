@@ -1,17 +1,19 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+*:where(
+    :not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)
+  ) {
   all: unset;
   display: revert;
 }
 
-html{
+html {
   font-size: 62.5%;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -19,9 +21,9 @@ html{
 
 html:focus-within {
   scroll-behavior: smooth;
-}  
+}
 
-body{
+body {
   font-size: 1.6rem;
   font-family: var(--font);
   text-rendering: optimizeSpeed;
@@ -29,33 +31,34 @@ body{
   background-color: #f2f2f2;
 }
 
-
 table {
   border-collapse: collapse;
 }
 
 img,
-picture{
-    max-width: 100%;
-    display: block;
+picture {
+  max-width: 100%;
+  display: block;
 }
 
-ol, ul, menu {
+ol,
+ul,
+menu {
   list-style: none;
 }
 
 input,
- textarea,
- select,
- optgroup {
-    all: revert;
-    outline: none;
-    border: none;
-    font-family: inherit;
-    line-height: 1.15;
-    width: 100%;
-    min-height: 3rem;
-    border-radius: .5rem;
+textarea,
+select,
+optgroup {
+  all: revert;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  line-height: 1.15;
+  width: 100%;
+  min-height: 3rem;
+  border-radius: 0.5rem;
 }
 
 meter {
@@ -71,7 +74,8 @@ textarea {
   white-space: revert;
 }
 
-input, textarea {
+input,
+textarea {
   -webkit-user-select: auto;
 }
 
@@ -79,13 +83,13 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
   font-family: inherit;
 }
 
-button{
+button {
   outline: none;
   border: none;
   font-family: inherit;
@@ -100,17 +104,17 @@ summary {
   display: list-item;
 }
 
-@media (prefers-reduced-motion: reduce){
+@media (prefers-reduced-motion: reduce) {
   html:focus-within {
-      scroll-behavior: auto;
-     }
+    scroll-behavior: auto;
+  }
 
   *,
   *::before,
-  *::after{
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
