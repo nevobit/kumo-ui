@@ -7,12 +7,23 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
   ],
+  
   framework: {
     name: "@storybook/react-vite",
     options: {},
   },
   docs: {
     autodocs: "tag",
+  },
+  async viteFinal(config) {
+    // Habilita CSS Modules
+    config.css = {
+      modules: {
+        
+      },
+      // Otras opciones de configuración de CSS si es necesario
+    };
+    return config;
   },
 };
 export default config;
