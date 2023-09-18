@@ -1,7 +1,8 @@
 {
   "name": "kumo-ui",
-  "private": true,
-  "version": "0.1.0",
+  "private": false,
+  "description": "A customizable set of components for React applications",
+  "version": "0.1.4",
   "type": "module",
   "packageManager": "pnpm@7.27.1",
   "author": "Nevobit",
@@ -30,7 +31,10 @@
   "dependencies": {
     "path": "^0.12.7",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "vite-plugin-css-modules": "^0.0.1",
+    "vite-plugin-load-css-module": "^0.1.4",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "7.0.24",
@@ -47,6 +51,8 @@
     "prop-types": "15.8.1",
     "storybook": "7.0.24",
     "typescript": "^4.6.3",
-    "vite": "^4.3.9"
+    "vite": "^4.3.9",
+    "vite-plugin-css": "^1.0.4",
+    "vite-plugin-dts": "^3.0.2"
   }
 }
