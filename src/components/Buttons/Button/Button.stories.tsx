@@ -17,9 +17,10 @@ const meta = {
               type: 'select',
               options: ['primary', 'secondary', 'cancel', 'third', 'danger', 'gray', 'dark'],
             },
-        }
-    }
-} satisfies Meta<typeof Button>;
+        },
+    },
+}
+
 
 export default meta;
 type Story = StoryObj<typeof meta>;

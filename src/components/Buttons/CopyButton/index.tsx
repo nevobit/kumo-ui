@@ -2,13 +2,11 @@ import React, { useState } from 'react'
 import styles from './CopyButton.module.css';
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement>{
-  children: React.ReactNode,
-  loading?: boolean,
   className?: string;
   language?: 'english' | 'spanish';
 }
 
-const CopyButton = ({children, loading, language,className, ...rest}: Props) => {
+const CopyButton = ({language,className, ...rest}: Props) => {
     const [isLinkCopied, setLinkCopied] = useState(false);
 
     const handleLinkCopy = async() => {
