@@ -14,7 +14,6 @@ import * as packageJson from "./package.json";
 export default defineConfig({
   plugins: [
     react(),
-    cssInjectedByJsPlugin({ relativeCSSInjection: true }),
     tsConfigPaths(),
     dts({
       include: ['src/**/*', 'src/**/*.css'],
